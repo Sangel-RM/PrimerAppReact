@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Sangel-RM/PrimerAppReact.git/static/css/main.3af86489.css",
-    "main.js": "/Sangel-RM/PrimerAppReact.git/static/js/main.3cffbbdd.js",
-    "index.html": "/Sangel-RM/PrimerAppReact.git/index.html",
-    "main.3af86489.css.map": "/Sangel-RM/PrimerAppReact.git/static/css/main.3af86489.css.map",
-    "main.3cffbbdd.js.map": "/Sangel-RM/PrimerAppReact.git/static/js/main.3cffbbdd.js.map"
+    "main.css": "./static/css/main.3af86489.css",
+    "main.js": "./static/js/main.3cffbbdd.js",
+    "index.html": "./index.html",
+    "main.3af86489.css.map": "./static/css/main.3af86489.css.map",
+    "main.3cffbbdd.js.map": "./static/js/main.3cffbbdd.js.map"
   },
   "entrypoints": [
     "static/css/main.3af86489.css",
