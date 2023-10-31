@@ -1,0 +1,206 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: .1s;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-image: linear-gradient(to right top, #050737, #10235f, #1b3d8b, #1f5bba, #127aeb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 10px;
+  background-image: linear-gradient(to right top, #210537, #5e0049, #9b004a, #cd2f39, #eb6612);
+  box-shadow: 5px 5px 0px 0px rgba(7, 22, 68, .8);
+}  
+.InsertarTarea{
+  width: 70%;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: transparent;
+  margin: 0 auto;
+}
+.App ul{
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 240px;
+  padding: 5px 0;
+  overflow-y: scroll;
+}
+.App ul::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+}
+.App ul::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 50px;
+}
+.App ul::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 5px;
+}
+.App ul li{
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 10px 0 0;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background-color: #050737;
+  color: white;
+  box-shadow: 5px 5px 0px 0px rgba(7, 22, 68, .4);
+}
+.App ul li:hover{
+  background-color: #300155;
+  box-shadow: 5px 5px 0px 0px rgba(7, 22, 68, .6);
+}
+.App .IntegrarNuevaTarea{
+  height: 30px;
+  border: transparent;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 30%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.App .IntegrarNuevaTarea:hover{
+  background-color: #3d8513;
+  color: #fff;
+}
+.App ul li.EmptyTodos{
+  justify-content: center;
+  box-shadow: none;
+  margin: 0;
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: bold;
+}
+#preloader_1{
+  background: none;
+  box-shadow: none;
+  justify-content: center;
+  align-items: normal;
+  height: 20px;
+}
+#preloader_1 span{
+display:block;
+width: 9px;
+height: 5px;
+background:#9b59b6;
+animation: preloader_1 1.5s	 infinite ease-in-out;
+}
+#preloader_1 span:nth-child(2){
+left:11px;
+animation-delay: .2s;
+}
+#preloader_1 span:nth-child(3){
+left:22px;
+animation-delay: .4s;
+}
+#preloader_1 span:nth-child(4){
+left:33px;
+animation-delay: .6s;
+}
+#preloader_1 span:nth-child(5){
+left:44px;
+animation-delay: .8s;
+}
+#modal{
+  position: absolute;
+}
+.activeModal{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+}
+.Modal{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Modal .Form-newTarea{
+  width: 300px;
+  height: 220px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  background-color:rgba(46, 0, 83, 0.8);
+  border-radius: 10px;
+  padding: 10px 10px;
+  gap: 10px;
+}
+.Modal .Form-newTarea label{
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 5px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.Modal .Form-newTarea label:hover{
+  background-color: #eb6612;
+  cursor: pointer;
+}
+.Modal .Form-newTarea #input-text{
+  padding: 5px 20px;
+  border: none;
+  width: 80%;
+  height: 100px;
+  border-radius: 5px;
+  margin: 0 0 20px 0;
+}
+.Modal .Form-newTarea .Guardar-Tarea{
+  padding: 5px 0;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 70%;
+  height: 30px;
+}
+.Modal .Form-newTarea .Guardar-Tarea:hover{
+  background-color: #3d8513;
+  color: #ffffff;
+}
+.Modal span.icon-delete{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.Modal span.icon-delete .fa-xmark{
+  color: White;
+  cursor: pointer;
+
+}
+.Modal span.icon-delete .fa-xmark:hover{
+  color: #9b004a;
+}
+.none{
+  display: none;
+}
+@keyframes preloader_1 {
+  0% {height:5px;transform:translateY(0px);background:#9b59b6;}
+  25% {height:30px;transform:translateY(-15px);background:#3498db;}
+  50% {height:5px;transform:translateY(0px);background:#9b59b6;}
+  100% {height:5px;transform:translateY(0px);background:#9b59b6;}
+}
+ 
